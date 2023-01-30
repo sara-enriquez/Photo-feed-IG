@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Instagram Photo Feed with Bootstrap</title>
+</head>
+<body>
+
+
+<!--Navbar-->
+  
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="col-8">
+                <i class="fa-brands fa-instagram"></i>
+                <a class="navbar-brand" href="#">Instagram</a>
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+            </div>
+
+
+<!--Settings dropdown button-->
+
+
+            <div class="col-1">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                      <div class="dropdown-divider"></div>
+                      <li><a class="dropdown-item" href="#" style="color:red">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+<!--Modal create new post-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><b>Create a new post</b></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                    <label for="caption"><b>Caption:</b></label><br>
+                    <textarea class="col" rows="2" cols="50"></textarea><br>
+                    <button type="button"  class="btn btn-light">
+                        <i class="fa-solid fa-camera"></i>
+                    </button>
+                    <button type="button"  class="btn btn-light">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Tabs-->
+<div class="container">
+    <div class="row + justify-content-center">
+        <div class="col">
+            <ul class="nav nav-tabs + justify-content-center">
+                <li class="tabs-buttons">
+                  <a class="nav-link" href="index.html">
+                    <i class="fa-solid fa-table-cells fa-2x"></i>
+                  </a>
+                </li>
+                <li class="tabs-buttons">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-square fa-2x"></i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Tab2-->
+
+<div class="container my-4">
+
+<!--Post 1-->
+
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 mx-auto">
+      <div class="card">
+        <div class="post-title py-3">
+          <div class="row + justify-content-center">
+            <h4 class="col-9">I love it!</h4>
+            <span class="col-2">2/4</span>
+          </div>
+        </div>
+          <img class="img-fluid"
+          src="https://fastly.picsum.photos/id/18/2500/1667.jpg?hmac=JR0Z_jRs9rssQHZJ4b7xKF82kOj8-4Ackq75D_9Wmz8"
+          />
+          <div class="card-body">
+            <h6><strong>460 Likes</strong></h6>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Post 2--> 
+  
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 mx-auto">
+      <div class="card">
+        <div class="post-title py-3">
+          <div class="row + justify-content-center">
+            <h4 class="col-9">This is my fav <3 </h4>
+            <span class="col-2">6/8</span>
+          </div>
+        </div>
+          <img class="img-fluid"
+          src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE"
+          />
+          <div class="card-body">
+            <h6><strong>720 Likes</strong></h6>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<!--Post 3-->
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 mx-auto">
+      <div class="card">
+        <div class="post-title py-3">
+          <div class="row + justify-content-center">
+            <h4 class="col-9">Amazing</h4>
+            <span class="col-2">10/12</span>
+          </div>
+        </div>
+          <img class="img-fluid"
+          src="https://fastly.picsum.photos/id/15/2500/1667.jpg?hmac=Lv03D1Y3AsZ9L2tMMC1KQZekBVaQSDc1waqJ54IHvo4"
+          />
+          <div class="card-body">
+            <h6><strong>1025 Likes</strong></h6>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt lacus eu.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Post 4-->
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 mx-auto">
+      <div class="card">
+        <div class="post-title py-3">
+          <div class="row + justify-content-center">
+            <h4 class="col-9">Wonderfull</h4>
+            <span class="col-2">14/16</span>
+          </div>
+        </div>
+          <img class="img-fluid"
+          src="https://fastly.picsum.photos/id/14/2500/1667.jpg?hmac=ssQyTcZRRumHXVbQAVlXTx-MGBxm6NHWD3SryQ48G-o"
+          />
+          <div class="card-body">
+            <h6><strong>843 Likes</strong></h6>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla ante sed nulla feugiat cursus.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Post 5-->
+
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 mx-auto">
+      <div class="card">
+        <div class="post-title py-3">
+          <div class="row + justify-content-center">
+            <h4 class="col-9">Do you like it?</h4>
+            <span class="col-2">18/20</span>
+          </div>
+        </div>
+          <img class="img-fluid"
+          src="https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68"
+          />
+          <div class="card-body">
+            <h6><strong>1206 Likes</strong></h6>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Post 6--> 
+  
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 mx-auto">
+      <div class="card">
+        <div class="post-title py-3">
+          <div class="row + justify-content-center">
+            <h4 class="col-9">What an amazing day</h4>
+            <span class="col-2">22/24</span>
+          </div>
+        </div>
+          <img class="img-fluid"
+          src="https://fastly.picsum.photos/id/17/2500/1667.jpg?hmac=HD-JrnNUZjFiP2UZQvWcKrgLoC_pc_ouUSWv8kHsJJY"
+          />
+          <div class="card-body">
+            <h6><strong>1387 Likes</strong></h6>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan efficitur.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<!--Post 7-->
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 mx-auto">
+      <div class="card">
+        <div class="post-title py-3">
+          <div class="row + justify-content-center">
+            <h4 class="col-9">From my camera</h4>
+            <span class="col-2">26/28</span>
+          </div>
+        </div>
+          <img class="img-fluid"
+          src="https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s"
+          />
+          <div class="card-body">
+            <h6><strong>970 Likes</strong></h6>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac neque sollicitudin, blandit justo et.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Post 8-->
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 mx-auto">
+      <div class="card">
+        <div class="post-title py-3">
+          <div class="row + justify-content-center">
+            <h4 class="col-9">Wow!</h4>
+            <span class="col-2">30/32</span>
+          </div>
+        </div>
+          <img class="img-fluid"
+               src="https://fastly.picsum.photos/id/11/2500/1667.jpg?hmac=xxjFJtAPgshYkysU_aqx2sZir-kIOjNR9vx0te7GycQ"
+            />
+          <div class="card-body">
+            <h6><strong>658 Likes</strong></h6>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis eleifend sem aliquet posuere. Nunc nisi purus, euismod eu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+              
+
+<!--Post 9-->
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 mx-auto">
+      <div class="card">
+        <div class="post-title py-3">
+          <div class="row + justify-content-center">
+            <h4 class="col-9 " >Love it!</h4>
+            <span class="col-2">34/36</span>
+          </div>
+        </div>
+          <img class="img-fluid"
+          src="https://fastly.picsum.photos/id/12/2500/1667.jpg?hmac=Pe3284luVre9ZqNzv1jMFpLihFI6lwq7TPgMSsNXw2w"
+          />
+          <div class="card-body">
+            <h6><strong>945 Likes</strong></h6>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Tab2 container-->
+
+</div>
+
+<!--Scripts-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/65ce775ac7.js" crossorigin="anonymous"></script>
+</body>
+</html>
+        
+    
