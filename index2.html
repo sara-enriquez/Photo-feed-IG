@@ -12,65 +12,65 @@
 
 <!--Navbar-->
   
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="col-8">
-                <i class="fa-brands fa-instagram"></i>
-                <a class="navbar-brand" href="#">Instagram</a>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Create a new post
-                </button>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="col-8">
+    <i class="fa-brands fa-instagram"></i>
+    <a class="navbar-brand" href="#">Instagram</a>
+  </div>
+  <div class="col-3">
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Create a new post
+    </button>
+  </div>
+  
+  
+  <!--Settings dropdown button-->
+  
+  
+  <div class="col-1">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-solid fa-gear"></i>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+        <div class="dropdown-divider"></div>
+        <li><a class="dropdown-item" href="#" style="color:red">Log out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-
-<!--Settings dropdown button-->
-
-
-            <div class="col-1">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-gear"></i>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Profile</a></li>
-                      <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                      <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                      <div class="dropdown-divider"></div>
-                      <li><a class="dropdown-item" href="#" style="color:red">Log out</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
 <!--Modal create new post-->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"><b>Create a new post</b></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                    <label for="caption"><b>Caption:</b></label><br>
-                    <textarea class="col" rows="2" cols="50"></textarea><br>
-                    <button type="button"  class="btn btn-light">
-                        <i class="fa-solid fa-camera"></i>
-                    </button>
-                    <button type="button"  class="btn btn-light">
-                        <i class="fa-sharp fa-solid fa-location-dot"></i>
-                    </button>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Publish</button>
-                </div>
-            </div>
-        </div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><b>Create a new post</b></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label for="caption"><b>Caption:</b></label><br>
+        <textarea class="col" rows="2" cols="50"></textarea><br>
+        <button type="button"  class="btn btn-light">
+          <i class="fa-solid fa-camera"></i>
+        </button>
+        <button type="button"  class="btn btn-light">
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
     </div>
+  </div>
 </div>
+
 <!--Tabs-->
+
 <div class="container">
     <div class="row + justify-content-center">
         <div class="col">
@@ -90,9 +90,9 @@
     </div>
 </div>
 
-<!--Tab2-->
 
-<div class="container my-4">
+
+
 
 <!--Post 1-->
 
@@ -332,9 +332,7 @@
   </div>
 </div>
 
-<!--Tab2 container-->
 
-</div>
 
 <!--Scripts-->
 
